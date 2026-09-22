@@ -1,0 +1,13 @@
+services:
+  php:
+    container_name: php_${PROJECT_NAME}
+    build:
+      context: ./docker/php
+    image: ${PROJECT_NAME}-php:local
+    working_dir: ${WORKDIR}
+    environment:
+      WORKDIR: ${WORKDIR}
+      PHP_IDE_CONFIG: serverName=docker
+    volumes:
+      - ./:${WORKDIR}
+      - ./../messenger-kafka:${WORKDIR}/../messenger-kafka

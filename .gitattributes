@@ -1,0 +1,11 @@
+/tests export-ignore
+/docker export-ignore
+/.github export-ignore
+/.gitignore export-ignore
+/.gitattributes export-ignore
+/.env export-ignore
+/Makefile export-ignore
+/Makefile.md export-ignore
+/docker-compose.yaml export-ignore
+/phpunit.xml.dist export-ignore
+/AGENTS.md export-ignore
